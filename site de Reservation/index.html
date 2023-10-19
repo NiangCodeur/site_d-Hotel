@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="" ></a>
+            <div class="list" id="list">
+                <i class="fa fa-times" onclick="fermer()"></i>
+                <ul>
+                    <li><a href="">Acceuil</a></li>
+                    <li><a href="">A propos</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Galerie</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="ouvrir()"></i>
+        </nav>
+        <div class="text">
+            <h1>Réserver un hôtel en ligne<br> avec <span>20% de Réduction!</span></h1>
+            <p>Réserver un hôtel pour vos prochaines vacances peut être une expérience bouleversante</p>
+                 <a href="" class="btn">Réserver &#8594;</a>
+        </div>
+    </div>
+    <!-------------------- Galerie --------------->
+    <section>
+        <h2 class="title"><span>G</span>alerie de notre hôtel</h2>
+        <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <img src="images/f1.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="images/f2.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="images/f3.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="images/f4.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="images/f5.jpg" alt="">
+            </div>
+            <div class="col-1">
+                <img src="images/f6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-------------------- contact --------------->
+    <section id="contact">
+        <h2 class="title"><span>C</span>ontact</h2>
+        <div class="content">
+        <form>
+            <h2>Pour Nous Contacter</h2>
+            <div class="box">
+                <input type="text" placeholder="Nom">
+            </div>
+            <div class="box">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="box">
+                <input type="text" placeholder="Tapez votre Texte ici !">
+            </div>
+            <div class="box">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </div>
+    </section>
+    <script>
+        let list = document.getElementById('list')
+
+        function ouvrir() {
+            list.style.right = "0"
+        }
+        function fermer() {
+            list.style.right = '-200px'
+        }
+    </script>
+</body>
+</html>
